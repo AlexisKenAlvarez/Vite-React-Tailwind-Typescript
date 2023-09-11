@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Knewave&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    .my-container {
+  .my-container {
     @apply max-w-[1500px] w-full mx-auto h-auto relative z-10
   }
 
-    /* Hide the default scrollbar */
+  .my-bg {
+    background-image: url("/mishabg.webp");
+    background-repeat: repeat;
+  }
+
+  .stroked {
+
+    -webkit-text-stroke: 3px black;
+
+  }
+
+  .stroked-light {
+
+    -webkit-text-stroke: 1px black;
+
+  }
+
+  /* Hide the default scrollbar */
   ::-webkit-scrollbar {
     width: 0.8rem;
     height: 0.5rem;

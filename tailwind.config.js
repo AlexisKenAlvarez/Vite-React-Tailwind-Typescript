@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ['Knewave'],
+        secondary: ['Kiwi Maru']
+      },
+      colors: {
+        bg: '#D3FFB4',
+        primary: '#6DAE3F'
+      }
+    },
   },
   plugins: [],
 }
