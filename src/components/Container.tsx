@@ -1,18 +1,22 @@
-import { ReactNode } from "react";
+import { ReactNode, forwardRef } from "react";
 import { cn } from "../utils";
 
-const Container = ({
-  className,
-  children,
-}: {
+interface myProps {
   className?: string;
   children: ReactNode;
-}) => {
-  return (
-    <section className={cn("w-full h-auto relative px-5", className)}>
-      {children}
-    </section>
-  );
-};
+}
+
+const Container = forwardRef<HTMLDivElement, myProps>(
+  ({ className, children }, ref) => {
+    return (
+      <section
+        className={cn("w-full h-auto relative px-5", className)}
+        ref={ref}
+      >
+        {children}
+      </section>
+    );
+  }
+);
 
 export default Container;
