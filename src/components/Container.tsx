@@ -4,19 +4,21 @@ import { cn } from "../utils";
 interface myProps {
   className?: string;
   children: ReactNode;
+  id?: string;
 }
 
 const Container = forwardRef<HTMLDivElement, myProps>(
-  ({ className, children }, ref) => {
+  ({ className, children, id }, ref) => {
     return (
       <section
-        className={cn("w-full h-auto relative px-5", className)}
+        className={cn("relative h-auto w-full px-5", className)}
         ref={ref}
+        id={id}
       >
         {children}
       </section>
     );
-  }
+  },
 );
 
 export default Container;

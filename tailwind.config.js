@@ -24,7 +24,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#249990",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -51,6 +51,11 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        background: "#FAFAFA"
+      },
+      fontFamily: {
+        secondary: ["Jockey One"],
+        primary: ["DM Sans"]
       },
       borderRadius: {
         lg: "var(--radius)",
