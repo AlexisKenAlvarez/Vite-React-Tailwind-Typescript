@@ -85,7 +85,7 @@ const Nav = () => {
               </button>
             </SheetTrigger>
             <SheetContent>
-              <div className="h-full w-full bg-white font-secondary">
+              <div className="h-full w-full bg-white font-secondary p">
                 <img
                   src="/logo.webp"
                   alt="Logo"
